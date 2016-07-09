@@ -71,8 +71,8 @@ body {
 /*侧边栏*/
 .dr-menu {
   width: 100%;
-  max-width: 400px;
-  min-width: 300px;
+  max-width: 200px;
+  min-width: 200px;
   position: relative;
   font-size: 1.3em;
   line-height: 2.5;
@@ -230,7 +230,12 @@ body {
 .dr-icon-menu:before {
   content: "\e007";
 }
-
+.junxunson{
+  display: block;
+}
+.hidden{
+  display: none;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

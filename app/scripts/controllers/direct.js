@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name welcomePageApp.controller:AboutCtrl
+ * @name welcomePageApp.controller:DirectCtrl
  * @description
- * # AboutCtrl
+ * # DirectCtrl
  * Controller of the welcomePageApp
  */
 angular.module('welcomePageApp')
-  .controller('AboutCtrl', function () {
+  .controller('DirectCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -39,38 +39,12 @@ angular.module('welcomePageApp')
               return false;
             }
           }, false );
-        });
-      }init();
+
+        } );
+
+      }
+
+      init();
+
     })();
-    $('.xuzhi').on('click',function(){
-      setTimeout(function(){
-        var xuzhison=$('.xuzhi').closest('.ul').find('.xuzhison');
-        if(xuzhison.hasClass('hidden')){
-          xuzhison.removeClass('hidden');
-          $(".xuzhison p").fadeIn("slow");
-        }else{
-          xuzhison.addClass('hidden');
-        }
-      },500)
-    });
-    $('.junxun').on('click',function(){
-      setTimeout(function(){
-        var junxunson=$('.junxun').closest('.ul').find('.junxunson');
-        if(junxunson.hasClass('hidden')){
-          junxunson.removeClass('hidden');
-          $(".junxunson p").fadeIn("slow");
-        }else{
-          junxunson.addClass('hidden');
-        }
-      },500)
-    });
-
-
-    $(document).ready(function () {
-
-    });
-  })
-.controller('father',function($scope){
-  
-});
-
+  });

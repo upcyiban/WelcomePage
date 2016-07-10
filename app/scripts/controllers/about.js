@@ -14,6 +14,9 @@ angular.module('welcomePageApp')
       'AngularJS',
       'Karma'
     ];
+    $(document).ready(function () {
+      $("p").fadeOut("slow");
+    });
     var YTMenu = (function() {
 
       function init() {
@@ -39,8 +42,10 @@ angular.module('welcomePageApp')
               return false;
             }
           }, false );
-        });
-      }init();
+
+        } );
+      }
+      init();
     })();
     $('.xuzhi').on('click',function(){
       setTimeout(function(){
@@ -64,13 +69,9 @@ angular.module('welcomePageApp')
         }
       },500)
     });
-
-
-    $(document).ready(function () {
-
-    });
-  })
-.controller('father',function($scope){
-  
-});
+    $('.ul a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show').fadeIn('slow');
+    })
+  });
 

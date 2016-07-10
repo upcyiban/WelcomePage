@@ -29,10 +29,16 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+
       .when('/direct', {
         templateUrl: 'views/direct.html',
         controller: 'DirectCtrl',
         controllerAs: 'direct'
+      })
+      .when('/search', {
+        templateUrl: 'views/search.html',
+        controller: 'SearchCtrl',
+        controllerAs: 'search'
       })
       .otherwise({
         redirectTo: '/'

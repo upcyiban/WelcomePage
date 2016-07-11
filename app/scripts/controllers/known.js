@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name welcomePageApp.controller:DirectCtrl
+ * @name welcomePageApp.controller:KnownCtrl
  * @description
- * # DirectCtrl
+ * # KnownCtrl
  * Controller of the welcomePageApp
  */
 angular.module('welcomePageApp')
-  .controller('DirectCtrl', function () {
+  .controller('KnownCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

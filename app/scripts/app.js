@@ -40,6 +40,26 @@ angular
         controller: 'SearchCtrl',
         controllerAs: 'search'
       })
+      .when('/known', {
+        templateUrl: 'views/known.html',
+        controller: 'KnownCtrl',
+        controllerAs: 'known'
+      })
+      .when('/around', {
+        templateUrl: 'views/around.html',
+        controller: 'AroundCtrl',
+        controllerAs: 'around'
+      })
+      .when('/elegant', {
+        templateUrl: 'views/elegant.html',
+        controller: 'ElegantCtrl',
+        controllerAs: 'elegant'
+      })
+      .when('/beauty', {
+        templateUrl: 'views/beauty.html',
+        controller: 'BeautyCtrl',
+        controllerAs: 'beauty'
+      })
       .otherwise({
         redirectTo: '/'
       });

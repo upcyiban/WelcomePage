@@ -22,6 +22,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -46,6 +47,7 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
@@ -54,20 +56,23 @@ body {
 /* Supporting marketing content */
 @font-face {
   font-family: 'icomoon';
-  src:url('fonts/icomoon.eot');
-  src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+  src: url('fonts/icomoon.eot');
+  src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
   url('fonts/icomoon.woff') format('woff'),
   url('fonts/icomoon.ttf') format('truetype'),
   url('fonts/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 .marketing {
   margin: 40px 0;
 }
+
 .marketing p + h4 {
   margin-top: 28px;
 }
+
 /*侧边栏*/
 .dr-menu {
   width: 100%;
@@ -80,12 +85,14 @@ body {
   color: #fff;
   padding-top: 2em;
 }
-.dr-menu > div  {
+
+.dr-menu > div {
   cursor: pointer;
   position: absolute;
   width: 100%;
   z-index: 100;
 }
+
 .dr-menu > div .dr-icon {
   top: 0;
   left: 0;
@@ -95,11 +102,13 @@ body {
   padding: 0 10px;
   transition: all 0.4s ease;
 }
+
 .dr-menu.dr-menu-open > div .dr-icon {
   color: #60a773;
   left: 100%;
   transform: translateX(-100%);
 }
+
 .dr-menu > div .dr-icon:after {
   content: "\e008";
   position: absolute;
@@ -108,9 +117,11 @@ body {
   left: -10%;
   opacity: 0;
 }
+
 .dr-menu.dr-menu-open > div .dr-icon:after {
   opacity: 1;
 }
+
 .dr-menu > div .dr-label {
   padding-left: 3em;
   position: relative;
@@ -123,9 +134,11 @@ body {
   line-height: 2.75;
   transition: all 0.2s ease-in;
 }
+
 .dr-menu.dr-menu-open > div .dr-label {
   transform: translateY(-90%);
 }
+
 .dr-menu ul {
   padding: 0;
   margin: 0 3em 0 0;
@@ -136,22 +149,26 @@ body {
   pointer-events: none;
   transition: opacity 0s linear 205ms;
 }
+
 .dr-menu.dr-menu-open ul {
   opacity: 1;
   z-index: 200;
   pointer-events: auto;
   transition: opacity 0s linear 0s;
 }
+
 .dr-menu ul li {
       display: block;
       margin: 0 0 5px 0;
       opacity: 0;
       transition: opacity 0.3s ease;
 }
+
  
 .dr-menu.dr-menu-open ul li {
       opacity: 1;
 }
+
 .dr-menu.dr-menu-open ul li:nth-child(2) {
   transition-delay: 35ms;
 }
@@ -175,14 +192,17 @@ body {
 .dr-menu.dr-menu-open ul li:nth-child(7) {
   transition-delay: 205ms;
 }
+
 .dr-menu ul li a {
   display: inline-block;
   padding: 0 20px;
   color: #fff;
 }
+
 .dr-menu ul li a:hover {
   color: #60a773;
 }
+
 .dr-icon:before,
 .dr-icon:after {
   position: relative;
@@ -230,12 +250,15 @@ body {
 .dr-icon-menu:before {
   content: "\e007";
 }
-.junxunson{
+
+.junxunson {
   display: block;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -249,12 +272,104 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
   }
+
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/*homePage style*/
+body, html {
+  height: 100%;
+  width: 100%
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft YaHei UI Light;
+  background: #fff
+}
+
+a {
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  text-decoration: none
+}
+
+a:hover {
+  color: #00bfff
+}
+
+.browserupgrade {
+  margin: .2em 0;
+  background: #ccc;
+  color: #000;
+  padding: .2em 0
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  box-shadow: 1px 1px 50px #dcdcdc
+}
+
+.nav {
+  padding-top: 20px;
+  width: 1280px
+}
+
+.nav, .nav ul {
+  height: 100%;
+  margin: 0 auto
+}
+
+.nav ul {
+  width: 1000px
+}
+
+.nav ul li {
+  float: left;
+  margin: 0 20px 20px;
+  list-style-type: none;
+  height: 150px;
+  width: 450px;
+  background: #fff;
+  box-shadow: 1px 1px 50px #dcdcdc
+}
+
+.nav ul li, .nav ul li .liIcon {
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s
+}
+
+.nav ul li .liIcon {
+  margin: 10px;
+  border-radius: 50%;
+  background: red
+}
+
+.nav ul li .LinkArr {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  height: 100%;
+  font-family: Microsoft YaHei UI Light;
+  color: #000
+}
+
+.nav ul li:hover .liIcon {
+  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn)
+}
+
+.nav ul li:hover {
+  box-shadow: 1px 1px 50px #a9a9a9
 }

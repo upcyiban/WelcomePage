@@ -1,21 +1,9 @@
 
-<div class="nav">
+<div style="width: 100%;margin-top: 10px;word-wrap: break-word;word-break: normal; " ng-controller="ShopListCtrl">
+  <div class="showSection" ng-repeat="shop in shops">
+    <a ng-href="{{shop.src}}" style="text-decoration:none "><div align="center" style="margin-top: -30px" class="hover"><img ng-src="{{shop.imgsrc}}" class="img-responsive img-circle" alt="头像" width="40%"></div>
+    <p align="center" class="lead" style="margin-top: 10px">{{shop.title}}</p>
+    </a>
+  </div>
+</div>
 
-  <ul>
-    <li><img height=130 width=130 src="images/icon.jpg" class="liIcon">
-      <div class="LinkArr">
-        <h2>基本查询:</h2>
-        <a href="#">1.校园电子地图</a><br>
-        <a href="#">2.学校周边旅游地图</a><br>
-        <a href="#">3.查班级、查宿舍、查导员</a><br>
-      </div>
-
-
-    </li>
-    <li><img height=130 width=130 src="images/icon.jpg" class="liIcon"></li>
-    <li><img height=130 width=130 src="images/icon.jpg" class="liIcon"></li>
-    <li><img height=130 width=130 src="images/icon.jpg" class="liIcon"></li>
-    <li><img height=130 width=130 src="images/icon.jpg" class="liIcon"></li>
-    <li><img height=130 width=130 src="images/icon.jpg" class="liIcon"></li>
-    <li><img height=130 width=130 src="images/icon.jpg" class="liIcon"></li>
-  </ul>

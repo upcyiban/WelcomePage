@@ -285,91 +285,44 @@ body {
 }
 
 /*homePage style*/
-body, html {
-  height: 100%;
-  width: 100%
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Microsoft YaHei UI Light;
-  background: #fff
-}
-
-a {
-  -webkit-transition: all .35s;
-  transition: all .35s;
-  text-decoration: none
-}
-
-a:hover {
-  color: #00bfff
-}
-
-.browserupgrade {
-  margin: .2em 0;
-  background: #ccc;
-  color: #000;
-  padding: .2em 0
-}
-
-.header {
-  height: 80px;
-  width: 100%;
-  box-shadow: 1px 1px 50px #dcdcdc
-}
-
-.nav {
-  padding-top: 20px;
-  width: 1280px
-}
-
-.nav, .nav ul {
-  height: 100%;
-  margin: 0 auto
-}
-
-.nav ul {
-  width: 1000px
-}
-
-.nav ul li {
+.showSection {
+  height: 192px;
+  width: 192px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-right: 15px;
   float: left;
-  margin: 0 20px 20px;
-  list-style-type: none;
-  height: 150px;
-  width: 450px;
-  background: #fff;
-  box-shadow: 1px 1px 50px #dcdcdc
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0.1px 0.1px 20px gainsboro;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
-
-.nav ul li, .nav ul li .liIcon {
-  position: relative;
-  -webkit-transition: all .5s;
-  transition: all .5s
+.showSection:hover {
+  box-shadow: 1px 1px 50px gainsboro;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
-
-.nav ul li .liIcon {
-  margin: 10px;
-  border-radius: 50%;
-  background: red
-}
-
-.nav ul li .LinkArr {
-  position: absolute;
-  top: 0;
-  left: 150px;
-  height: 100%;
-  font-family: Microsoft YaHei UI Light;
-  color: #000
-}
-
-.nav ul li:hover .liIcon {
+.hover :hover{
   -webkit-transform: rotate(1turn);
-  transform: rotate(1turn)
-}
-
-.nav ul li:hover {
-  box-shadow: 1px 1px 50px #a9a9a9
+  transform: rotate(1turn);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
